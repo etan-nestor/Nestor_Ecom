@@ -13,22 +13,22 @@ const Menu = [
     },
     {
         id: 2,
-        name: "Top Rated",
+        name: "Peripherals",
         link: "/#services"
     },
     {
         id: 3,
-        name: "Kids Wear",
+        name: "Equipment",
         link: "/#"
     },
     {
         id: 4,
-        name: "Mens Wear",
+        name: "Hardware",
         link: "/#"
     },
     {
         id: 5,
-        name: "Electronics",
+        name: "Supports",
         link: "/#"
     },
 ];
@@ -36,17 +36,17 @@ const Menu = [
 const DropDownLinks = [
     {
         id: 1,
-        name: "Trending Items",
+        name: "Laser Pointers",
         link: "/#"
     },
     {
         id: 2,
-        name: "Best Selling",
+        name: "Mice",
         link: "/#"
     },
     {
         id: 3,
-        name: "Top Rated",
+        name: "Keyboards",
         link: "/#"
     },
 ];
@@ -113,7 +113,7 @@ const Navbar = () => {
                     {/* menus deroulants et links */}
                     <li className="group relative cursor-pointer">
                         <a href="" className="flex items-center gap-[2px] py-2">
-                            Trending Products
+                            Accessories
                             <span>
                                 <FaCaretDown
                                     className="transition-all duration-200 group-hover:rotate-180"
