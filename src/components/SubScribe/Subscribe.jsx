@@ -1,14 +1,31 @@
 import React from 'react';
-import Barner from '../../assets/Barner/bar.jpg'
+import Banner from '../../assets/Barner/barn.jpg'
 
 const BarnerImg = {
-    
+    backgroundImage:`url(${Banner})`,
+    backgroundPosition:"center",
+    backgroundRepeat:"no-repeat",
+    backgroundSize:"cover",
+    height:"100%",
+    width:"100%",
 }
 
 const Subscribe = () => {
   return (
-    <div>
-        
+    <div data-aos="zoom-in" className="mb-20 bg-gray-100 dark:bg-gray-800 text-white" style={BarnerImg}>
+        <div className="container backdrop-blur-sm py-10">
+            <div className="space-y-6 max-w-xl mx-auto">
+                <h1 className="text-2xl !containertext-center sm:text-left sm:text-4xl font-semibold">
+                    Get notification fro New Products
+                </h1>
+                <input
+                data-aos="fade-up"
+                type="text"
+                placeholder="Enter your email here !"
+                className="w-full p-3"
+                />
+            </div>
+        </div>
     </div>
   )
 }
