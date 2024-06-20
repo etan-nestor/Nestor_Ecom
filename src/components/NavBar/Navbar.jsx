@@ -1,35 +1,35 @@
 import { FaCaretDown } from "react-icons/fa";
 import { BsFillCartFill } from "react-icons/bs";
 import { IoMdSearch } from "react-icons/io";
-import React from 'react'
-import Logo from '../../assets/e_logo.png'
+import Logo from '../../assets/Logos.png';
+import {Link} from 'react-router-dom';
 import DarkMode from "./DarkMode";
 
 const Menu = [
     {
         id: 1,
         name: "Home",
-        link: "/#"
+        link: "/"
     },
     {
         id: 2,
         name: "Peripherals",
-        link: "/#services"
+        link: "/peripherals"
     },
     {
         id: 3,
-        name: "Equipment",
-        link: "/#"
+        name: "Equipments",
+        link: "/equipments"
     },
     {
         id: 4,
         name: "Hardware",
-        link: "/#"
+        link: "/hardwares"
     },
     {
         id: 5,
         name: "Supports",
-        link: "/#"
+        link: "/supports"
     },
 ];
 
@@ -37,43 +37,45 @@ const DropDownLinks = [
     {
         id: 1,
         name: "Laser Pointers",
-        link: "/#"
+        link: "/laser"
     },
     {
         id: 2,
         name: "Mice",
-        link: "/#"
+        link: "/mice"
     },
     {
         id: 3,
         name: "Keyboards",
-        link: "/#"
+        link: "/keyboard"
     },
 ];
 
 const Navbar = () => {
 
     return (
-        <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
+        <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 fixed w-full z-40">
             {/* upper nav */}
-            <div className="bg-primary/40 py-2">
+            <div className="bg-primary py-2">
                 <div className="container flex justify-between items-center">
+                    
+                    {/* Open-Numeric Logo management */}
                     <div>
-                        <a className="font-bold text-2xl sm:text-3xl flex gap-2" href="#">
+                        <Link className="font-bold text-2xl sm:text-3xl flex gap-2" to='/'>
                             <img src={Logo} alt="logo"
-                                className="w-[8rem] uppercase"
+                                className="w-[4rem] uppercase rounded-full"
                             />
                             {/* Slogan for nestor ecom-site */}
-                        </a>
+                        </Link>
                     </div>
 
                     {/* search bar */}
                     <div className="flex justify-between items-center gap-4">
                         <div className="relative group hidden sm:block">
                             <input type="text" placeholder='e-Search'
-                                className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-grey-300 px-2 py-1 focus:outlined-none focus:border-1 focus:border-primary dark:bg-gray-800" 
+                                className="w-[200px] sm:w-[200px] group-hover:w-[300px] transition-all duration-300 rounded-full border border-grey-300 px-2 py-1 focus:outlined-none focus:border-1 focus:border-primary dark:bg-gray-800 font-semibold" 
                             />
-                            <IoMdSearch className="text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
+                            <IoMdSearch className="text-gray-500 font-bold group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
                         </div>
                     </div>
 
@@ -82,11 +84,12 @@ const Navbar = () => {
                         onClick={() => {
                             alert("Ce button n'est pas encore implementer")
                         }}
-                        className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group"
+                        className="bg-gradient-to-r from-primary to-blue-400 transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group"
                     >
                         <span
                             className="group-hover:block hidden transition-all duration-200"
-                        >order
+                        >
+                            Order now
                         </span>
                         <BsFillCartFill
                             className="text-xl text-white drop-shadow-sm cursor-pointer"
@@ -100,7 +103,7 @@ const Navbar = () => {
                 </div>
             </div>
             {/* lower nav */}
-            <div className="flex justify-center">
+            <div className="flex justify-center text-2xl font-semibold">
                 <ul className="sm:flex hidden items-center gap-4">
                     {
                         Menu.map((data) => (
@@ -125,7 +128,7 @@ const Navbar = () => {
                                 {
                                     DropDownLinks.map((data) => (
                                         <li key={data.id}>
-                                            <a className="inline-block w-full rounded-md p-2 hover:bg-primary/20" href={data.link}>
+                                            <a className="inline-block w-full rounded-md p-2 hover:bg-primary hover:text-white" href={data.link}>
                                                 {data.name}
                                             </a>
                                         </li>

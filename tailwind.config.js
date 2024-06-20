@@ -8,13 +8,13 @@ export default {
   theme: {
     extend: {
       colors:{
-        primary:"#fea928",
-        secondary:"#ed8900",
+        primary:"#ff5500",
+        secondary:"#ed9900",
       },
       container:{
         center:true,
         padding:{
-          DEFAULT:'1rem',
+          DEFAULT:'2rem',
           sm:"3rem",
         },
       },

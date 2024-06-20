@@ -1,39 +1,28 @@
-import React from 'react';
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import image1 from '../../assets/Testimonials/test.jpg'
+import image1 from '../../assets/Testimonials/t4.png';
+import image2 from '../../assets/Testimonials/t2.png';
+import image3 from '../../assets/Testimonials/t3.png';
 
 const CustomersData = [
     {
         id: 1,
-        name: "Leandre",
+        name: "P. K. B. LEANDRE",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptas saepe laborum illum sunt assumenda!",
         img: image1,
     },
     {
         id: 2,
-        name: "Leandre",
+        name: "S. KARIA",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptas saepe laborum illum sunt assumenda!",
-        img: image1,
+        img: image2,
     },
     {
         id: 3,
-        name: "Leandre",
+        name: "S. FLORE",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptas saepe laborum illum sunt assumenda!",
-        img: image1,
-    },
-    {
-        id: 4,
-        name: "Leandre",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptas saepe laborum illum sunt assumenda!",
-        img: image1,
-    },
-    {
-        id: 5,
-        name: "Leandre",
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptas saepe laborum illum sunt assumenda!",
-        img: image1,
+        img: image3,
     },
 ]
 
@@ -82,11 +71,11 @@ const Testimonials = () => {
             <div className="container">
                 {/* header section */}
                 <div className="text-center mb-10 max-w-[600px] mx-auto">
-                    <p data-aos="fade-up" className="text-sm text-primary ">
+                    <p data-aos="fade-up" className="text-xl font-semibold text-primary ">
                         What our customers are saying
                     </p>
-                    <h1 data-aos="fade-up" className="text-3xl font-bold">Testimonials</h1>
-                    <p data-aos="fade-up" className="text-xs text-gray-400">
+                    <h1 data-aos="fade-up" className="text-5xl font-bold">Testimonials</h1>
+                    <p data-aos="fade-up" className="text-[18px] text-gray-400">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium
                     </p>
                 </div>
@@ -96,22 +85,22 @@ const Testimonials = () => {
                 <Slider {...settings}>
                     {CustomersData.map((data) => (
                         <div key={data.id} className="my-6">
-                            <div className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
+                            <div className="flex flex-col gap-4 shadow-lg py-4 px-4 mx-2 rounded-xl dark:bg-gray-800 dark:text-white bg-gray-200 relative">
                                 <div className="mb-4">
                                     <img src={data.img} alt="" className="rounded-full w-20 h-20" />
                                 </div>
                                 <div className="flex fles-col items-center gap-4">
                                     <div className="space-y-3">
-                                        <p className="text-xs text-gray-500">
+                                        <p className="text-xl text-gray-500">
                                             {data.text}
                                         </p>
-                                        <h1 className="text-xl text-black/80 font-bold dark:text-light">
+                                        <h1 className="text-xl  dark:text-white text-black/80 font-bold dark:text-light">
                                             {data.name}
                                         </h1>
                                     </div>
                                 </div>
-                                <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
-                                    "
+                                <p className="text-black/90 text-7xl font-serif absolute top-0 right-0">
+                                💡
                                 </p>
                             </div>
                         </div>
