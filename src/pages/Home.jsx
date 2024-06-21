@@ -2,8 +2,11 @@ import Hero from '../components/Hero/Hero';
 import TopProducts from '../components/TopProducts/TopProducts';
 import Subscribe from '../components/SubScribe/Subscribe';
 import Products from '../components/Products/Products';
-import Barner from '../components/Barner/Barner';
 import Testimonials from '../components/Testimonials/Testimonials';
+import Barner from '../components/Barner/Barner';
+
+import BarnerImg from '../assets/autres/other9.png';
+
 
 const Home = () => {
   return (
@@ -12,7 +15,10 @@ const Home = () => {
       <TopProducts />
       <Subscribe />
       <Products />
-      <Barner />
+      <Barner
+      img={BarnerImg}
+      title="An Eco-Friendly Online Store"
+      subtitle="Explore a curated selection of sustainable, eco-conscious, and ethical products for a greener future."/>
       <Testimonials />
     </div>
   )

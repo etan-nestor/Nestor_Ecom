@@ -1,7 +1,7 @@
 import { FaStar } from "react-icons/fa";
 import image1 from '../../assets/autres/other3.png'
 import image3 from '../../assets/autres/other4.png'
-import image2 from '../../assets/autres/other5.png'
+import image2 from '../../assets/autres/other6.png'
 import image5 from '../../assets/autres/other7.png'
 import image4 from '../../assets/autres/other8.png'
 

@@ -12,12 +12,12 @@ const PeripheralsHero = () => {
             {/* My text part */}
             <div className="text-center flex flex-col gap-2 w-[750px]">
                 <h1 className="dark:text-primary text-center text-5xl font-bold ">Pheripherals Party</h1>
-                <h4 className="text-2xl font-semibold">Lorem ipsum dolor sit amet consectetur.</h4>
-                <p className="text-xl">
+                <h4 className="text-3xl font-semibold">Lorem ipsum dolor sit amet consectetur.</h4>
+                <p className="text-2xl">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusamus amet quis commodi nulla! Iste consequatur debitis quis quam exercitationem vel eum dignissimos veritatis quia!
                 </p>
                 <div className="mt-8">
-                    <button className="bg-primary outline-none border-none text-white font-bold px-4 py-4 rounded-xl hover:bg-gray-200 hover:text-black transition-all duration-300">
+                    <button className="bg-primary outline-none border-none text-white font-bold px-8 py-4 text-xl rounded-xl hover:bg-gray-200 hover:text-black transition-all duration-300">
                         Order now
                     </button>
                 </div>
