@@ -108,8 +108,8 @@ const Navbar = () => {
                     {
                         Menu.map((data) => (
                             <li key={data.id} >
-                                <a href={data.link} className="inline-block px-4 hover:text-primary duration-200">{data.name}
-                                </a>
+                                <Link to={data.link} className="inline-block px-4 hover:text-primary duration-200">{data.name}
+                                </Link>
                             </li>
                         ))
                     }
